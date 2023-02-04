@@ -1,10 +1,14 @@
 import React from "react";
 
-const Total = (props) => {
+const Total = ({parts}) => {
+    
+     var total =0
+     parts.map(e=> total+=e.excercises
+        )
     return ( 
         <div>
 
-<p>Number of exercises {props.e1 + props.e2 + props.e3}</p>
+<p>Number of exercises {total}</p>
         </div>
      );
 }
